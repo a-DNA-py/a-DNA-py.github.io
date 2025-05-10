@@ -461,6 +461,10 @@ iframe {
         margin-top: 10vw;
     }
 
+    #trailer {
+        display: none;
+    }
+
     .copyright {
         padding-top: 10vh;
         font-size: 6.5vw;
