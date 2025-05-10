@@ -1,13 +1,24 @@
 document.getElementById("navbarElement").innerHTML = `
-      <nav id="navbar">
-        <a class="nav-link" href="/index.html" id="logo"><img src="/img/logo.png"></a>
+    <nav id="navbar" class="topnav">
+        <a href="/index.html" id="logo"><img src="/img/logo.png"></a>
         <a class="nav-link" href="/pages/about.html">About Us</a>
         <a class="nav-link" href="/pages/parivartan.html">PARIVARTAN</a>
         <a class="nav-link" href="/pages/involved.html">Get Involved</a>
         <a class="nav-link" href="/pages/contact.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
     </nav>
   `;
 
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}  
 
 const trailer = document.getElementById("trailer");
 
