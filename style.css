@@ -19,6 +19,10 @@
     --dark: #0e422b;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--bg);
     padding: 2vh 10vw;
