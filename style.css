@@ -482,6 +482,10 @@ iframe {
         width: 100%;
     }
 
+    .img-link-vol {
+        height: 55vmin;
+    }
+
     .vol-desc {
         font-size: 3vw;
     }
