@@ -11,12 +11,15 @@
     padding: 0;
     margin: 0;
     transition: all 500ms ease-in-out;
-
 }
 
 :root {
     --bg: rgb(255, 243, 224);
     --dark: #0e422b;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 body {
@@ -450,8 +453,8 @@ iframe {
     }
 
     .ini-text {
-        font-size: 10vw;
-        line-height: 9vw;
+        font-size: 8.5vw;
+        line-height: 8vw;
     }
 
     #image-track {
@@ -477,6 +480,14 @@ iframe {
 
     .img-contain > img {
         width: 100%;
+    }
+
+    .vol-desc {
+        font-size: 3vw;
+    }
+
+    .vol-info {
+        font-size: 3vw;
     }
 
     .fname {
