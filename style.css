@@ -19,10 +19,6 @@
     --dark: #0e422b;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 body {
     background-color: var(--bg);
     padding: 2vh 10vw;
@@ -116,6 +112,9 @@ body:hover > #trailer {
     margin-top: 6vh;
 }
 
+.vol {
+    margin-top: 12vh;
+}
 
 #initiaves {
     height: 35vmin;
@@ -150,8 +149,15 @@ body:hover > #trailer {
 
     overflow: hidden;
 }
+
+.img-link-vol {
+    width: 30vmin;
+    height: 45vmin;
+
+    overflow: hidden;
+}
   
-.image, .image2 {
+.image {
     width: 30vmin;
     height: 30vmin;
     object-fit: cover;
@@ -160,6 +166,10 @@ body:hover > #trailer {
     overflow: hidden;
 
     transition: all 500ms ease-in-out;
+}
+
+.img-link-vol > .image {
+    height: 35vmin;
 }
 
 .desc {
@@ -182,12 +192,49 @@ body:hover > #trailer {
     transition: all 500ms ease-in-out;
 }
 
+.vol-desc {
+    position: absolute;
+
+    width: 25vmin;
+    height: 35vmin;
+
+    color: var(--dark);
+    font-family: "Montserrat";
+    font-size: 1.5vw;
+    margin: 1vw;
+
+    visibility: hidden;
+
+    z-index: 1000;
+    top: 0;
+    opacity: 0;
+  
+    transition: all 500ms ease-in-out;
+}
+
 .img-link:hover .image {
     opacity: 0.4;
     scale: 1.1;
 }
 
+.img-link-vol:hover .image {
+    opacity: 0.4;
+}
+
+.vol-info {
+    color: var(--dark);
+    font-family: "Montserrat";
+    font-size: 1.5vw;
+
+    text-align: center;
+}
+
 .img-link:hover > .desc {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img-link-vol:hover > .vol-desc {
     visibility: visible;
     opacity: 1;
 }
@@ -469,4 +516,9 @@ iframe {
         padding-top: 10vh;
         font-size: 6.5vw;
     }
+}
+
+.gap {
+    height: 10vh;
+    width: 100%;
 }
