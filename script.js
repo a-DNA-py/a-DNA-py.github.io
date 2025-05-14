@@ -5,11 +5,13 @@ document.getElementById("navbarElement").innerHTML = `
         <a class="nav-link" href="/pages/parivartan.html">PARIVARTAN</a>
         <a class="nav-link" href="/pages/involved.html">Get Involved</a>
         <a class="nav-link" href="/pages/contact.html">Contact Us</a>
+        <div class="nav-link" id="google_translate_element"></div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
     </nav>
   `;
+
 
 function myFunction() {
   var x = document.getElementById("navbar");
