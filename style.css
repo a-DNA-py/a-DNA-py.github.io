@@ -408,6 +408,14 @@ iframe {
 
 }
 
+#parivartan-forms{
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    margin-bottom: 5vh;
+}
 
 @media screen and (max-width: 700px) {
     .nav-link {
@@ -480,10 +488,6 @@ iframe {
 
     .img-contain > img {
         width: 100%;
-    }
-
-    .img-link-vol {
-        height: 55vmin;
     }
 
     .vol-desc {
