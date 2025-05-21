@@ -609,3 +609,19 @@ iframe {
     height: 10vh;
     width: 100%;
 }
+
+.button {
+    color: var(--bg);
+    background-color: var(--dark);
+    
+    padding: 2vw 5vh;
+    text-decoration: none;
+}
+
+.button:hover {
+    padding: 2.5vw 6.25vh;
+}
+
+.a-container {
+    text-align: center;
+}
